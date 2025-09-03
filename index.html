@@ -613,7 +613,7 @@ ISMS 대응을 위해 다양한 <strong>시스템 보안</strong> 관련 업무�
             </ul>
              &nbsp;개발 당시 LG측 API연동 승인 지연으로 프로젝트 일정이 밀릴 수 있는 상황이었습니다. 이 때 기다리기보다는 샘플 데이터를 이용해 테스트용 임시 api를 만들어 작업 순서를 변경 하는 등 유연한 대처를 통해 일정 지연을 방지한 경험이 있습니다.<br>
           <strong>[개발 언어 및 활용 기술]</strong><br>
-          &nbsp;&nbsp;- 사용언어 : C#, java<br>
+          &nbsp;&nbsp;- 사용언어 : C#, java, JavaScript<br>
         &nbsp;&nbsp;- 데이터베이스 : MsSql<br>
         &nbsp;&nbsp;- Tools : IIS, Git, Eclipse IDE, Visual Studio, SSMS<br>
         &nbsp;&nbsp;- API : 키움페이, 이니시스, LG U+, 비즈뿌리오 </p>
@@ -641,7 +641,7 @@ ISMS 대응을 위해 다양한 <strong>시스템 보안</strong> 관련 업무�
               <li>보안 점검 및 서버 권한 설정 적용</li>
               <li>IIS, DB 일부, 서비스, 스케줄러 설치 및 배포</li>
             </ul>
- &nbsp; IIS 웹서비스 배포 후 css, js등이 적용되지 않는 오류가 발생하였습니다. IIS설치 시에 MIME 정적 타입 설정이 누락된 것을 확인하고 직접 설정하여 문제를 해결한 경험이 있습니다.<br>
+ &nbsp; 서버 내 파일 권한 차이로 인해 웹 내 파일 변경 불가한 문제가 발생했고 즉시 파일 접근 권한을 필요한 하위 항목까지 재설정하였습니다.<br>
           <strong>[개발 언어 및 활용 기술]</strong><br>
           &nbsp;&nbsp;- 사용언어 : C#, java<br>
         &nbsp;&nbsp;- 데이터베이스 : MsSql<br>
@@ -674,10 +674,8 @@ ISMS 대응을 위해 다양한 <strong>시스템 보안</strong> 관련 업무�
                 <li> SQL Injection, XSS, 헤더 정보 노출, 세션 취약점 조치, hsts설정 </li>
                 <li> 사용자 활동 이력 관리 자동화  </li>
             </ul>
-            &nbsp;
- 존 분리를 위한 서버 이전 중 일부 파일의 암호화가 풀리는 문제가 발생했습니다. 해당 문제의 해결을 위해 신속하게 검증 서비스를 개발하여 파일을 재암호화 하고 동일 현상이 다시 발생하지 않도록 조치한 경험이 있습니다.<br>
           <strong>[개발 언어 및 활용 기술]</strong><br>
-          &nbsp;&nbsp;- 사용언어 : C#<br>
+          &nbsp;&nbsp;- 사용언어 : C#, JavaScript<br>
         &nbsp;&nbsp;- 데이터베이스 : MsSql<br>
         &nbsp;&nbsp;- Tools : IIS, Git, Visual Studio, SSMS<br>
       
@@ -739,7 +737,7 @@ ISMS 대응을 위해 다양한 <strong>시스템 보안</strong> 관련 업무�
             <li>카카오톡/SMS 알림 기능 개발</li>
             <li>구매자/관리자가 실시간 배송 현황 확인 가능하도록 UI/서비스 구현</li>
           <strong>[개발 언어 및 활용 기술]</strong><br>
-          &nbsp;&nbsp;- 사용언어 : C#<br>
+          &nbsp;&nbsp;- 사용언어 : C#, JavaScript<br>
         &nbsp;&nbsp;- 데이터베이스 : MsSql<br>
         &nbsp;&nbsp;- Tools : IIS, Git, Visual Studio, SSMS<br>
         &nbsp;&nbsp;- API : 키움페이, 이니시스, LG U+, 비즈뿌리오, KakaoMap </p>
@@ -775,7 +773,7 @@ ISMS 대응을 위해 다양한 <strong>시스템 보안</strong> 관련 업무�
             <li>임대 종료일 기준 사전·당일 알림 메시지 자동 발송(SMS/LMS) </li>
             <li>타 사업자용 표준화 API 설계 및 배포                     </li>
           <strong>[개발 언어 및 활용 기술]</strong><br>
-          &nbsp;&nbsp;- 사용언어 : C#<br>
+          &nbsp;&nbsp;- 사용언어 : C#, JavaScript<br>
         &nbsp;&nbsp;- 데이터베이스 : MsSql<br>
         &nbsp;&nbsp;- Tools : IIS, Git, Visual Studio, SSMS<br>
         &nbsp;&nbsp;- API : KT BTB API, 비즈뿌리오 </p>
@@ -806,7 +804,7 @@ ISMS 대응을 위해 다양한 <strong>시스템 보안</strong> 관련 업무�
             <li>통합 테스트 및 모니터링 적용</li>
             <li>수납내역 조회 및 개별결제 처리 UI/서비스 구현</li>
           <strong>[개발 언어 및 활용 기술]</strong><br>
-          &nbsp;&nbsp;- 사용언어 : C#<br>
+          &nbsp;&nbsp;- 사용언어 : C#, JavaScript<br>
         &nbsp;&nbsp;- 데이터베이스 : MsSql<br>
         &nbsp;&nbsp;- Tools : IIS, Git, Visual Studio, SSMS<br>
         &nbsp;&nbsp;- API : HyosungAPI </p>
@@ -1120,7 +1118,15 @@ so that your content remains compatible with other Jekyll themes.</p> -->
       </tr>
       <tr>
         <td>JAVA</td>
-        <td>간단한 기능 구현 및 운영 시스템 유지보수 경험</td>
+        <td>기본적인 기능 구현 및 운영 시스템 유지보수 경험</td>
+      </tr>
+      <tr>
+        <td>Spring</td>
+        <td>Spring MVC 패턴 기반의 게시판·상품관리 모듈 구현 경험</td>
+      </tr>
+      <tr>
+        <td>JavaScript</td>
+        <td>프론트엔드 기능 구현, API 호출·데이터 바인딩 처리 경험</td>
       </tr>
       <tr>
         <td>SQL</td>
@@ -1129,14 +1135,6 @@ so that your content remains compatible with other Jekyll themes.</p> -->
       <tr>
         <td>HTML / CSS</td>
         <td>기본적인 웹 페이지 제작 가능</td>
-      </tr>
-      <tr>
-        <td>JavaScript</td>
-        <td>프론트엔드 기능 구현, API 호출·데이터 바인딩 처리 경험</td>
-      </tr>
-      <tr>
-        <td>Spring</td>
-        <td>Spring MVC 패턴 기반의 게시판·상품관리 모듈 구현 경험</td>
       </tr>
     </table>
 

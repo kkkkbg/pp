@@ -484,7 +484,7 @@ ISMS 대응을 위해 다양한 <strong>시스템 보안</strong> 관련 업무�
     <p class="note-sm" style="font-size:20px;font-weight:bold;font-style:normal;letter-spacing:.025rem;text-transform:uppercase;color:var(--menu-text);">
       License
       <div><br>
-        <span style="font-size:17.5px; font-weight:bold">정보처리기사(9월 합격예정)</span>
+        <span style="font-size:17.5px; font-weight:bold">정보처리기사</span>
         <span style="padding-left:20px">2025.09</span>
       </div>
       <div><br>
@@ -611,7 +611,8 @@ ISMS 대응을 위해 다양한 <strong>시스템 보안</strong> 관련 업무�
               <li>통합 테스트 및 쿼리 최적화, 서버 보안 작업</li>
               <li>서버점검 및 유지보수 진행</li>
             </ul>
-             &nbsp;개발 당시 LG측 API연동 승인 지연으로 프로젝트 일정이 밀릴 수 있는 상황이었습니다. 이 때 기다리기보다는 샘플 데이터를 이용해 테스트용 임시 api를 만들어 작업 순서를 변경 하는 등 유연한 대처를 통해 일정 지연을 방지한 경험이 있습니다.<br>
+             &nbsp;주문번호 기반 DB 트랜잭션 처리 로직을 설계하여 결제 결과를 안전하게 조회 가능하게 개선. <br>
+             API 장애/응답 지연 시 재시도 가능한 구조를 추가하고, DB에 실패 로그를 저장해 민원 대응 체계 강화.<br>
           <strong>[개발 언어 및 활용 기술]</strong><br>
           &nbsp;&nbsp;- 사용언어 : C#, java, JavaScript<br>
         &nbsp;&nbsp;- 데이터베이스 : MsSql<br>
@@ -641,7 +642,8 @@ ISMS 대응을 위해 다양한 <strong>시스템 보안</strong> 관련 업무�
               <li>보안 점검 및 서버 권한 설정 적용</li>
               <li>IIS, DB 일부, 서비스, 스케줄러 설치 및 배포</li>
             </ul>
- &nbsp; 서버 내 파일 권한 차이로 인해 웹 내 파일 변경 불가한 문제가 발생했고 즉시 파일 접근 권한을 필요한 하위 항목까지 재설정하였습니다.<br>
+ &nbsp; 이전 시점 최신 데이터까지 동기화하는 마이그레이션 절차 설계하였습니다.<br>
+파일 접근 권한을 필요한 하위 항목까지 재설정하여 서비스 무중단 운영하였습니다.<br>
           <strong>[개발 언어 및 활용 기술]</strong><br>
           &nbsp;&nbsp;- 사용언어 : C#, java<br>
         &nbsp;&nbsp;- 데이터베이스 : MsSql<br>
